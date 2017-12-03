@@ -1,0 +1,27 @@
+<!--index.wxml-->
+<view class="container">
+  <!--<view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>-->
+  <!--<view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>-->
+  <view wx:for="{{textArray}}" wx:key="index">
+
+    <button class="listItem" bindtap="toDetailView">
+      <view class="itemContent">
+        <image class="avatar" src="http://s3.amazonaws.com/nvest/Blank_Club_Website_Avatar_Gray.jpg"></image>
+        <view class="listInfo">
+          <text class="listTime">12/18/2017</text>
+          <text class="listText">{{item}}</text>
+        </view>
+      </view>
+    </button>
+  </view>
+
+
+</view>

@@ -1,0 +1,6 @@
+<view class="container">
+
+  
+  <text>从香槟到芝加哥</text>
+  <button class="backButton">返回</button>
+</view>

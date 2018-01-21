@@ -2,12 +2,39 @@
   "pages":[
     "pages/index/index",
     "pages/logs/logs",
-    "pages/detail/detail"
+    "pages/detail/detail",
+    "pages/me/me",
+    "pages/history/history"
   ],
+
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
+    "navigationBarTitleText": "CESA",
     "navigationBarTextStyle":"black"
+  },
+  "tabBar":{
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "顺风车",
+        "iconPath": "images/list.jpg",
+        "selectedIconPath": "images/list.jpg"
+      },
+      {
+        "pagePath": "pages/history/history",
+        "text": "历史",
+        "iconPath": "images/history.jpg",
+        "selectedIconPath": "images/history.jpg"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "我的账户",
+        "iconPath": "images/me.jpg",
+        "selectedIconPath": "images/me.jpg"
+      }
+    ],
+    "selectedColor": "#8FEA54",
+    "borderStyle": "white"
   }
 }

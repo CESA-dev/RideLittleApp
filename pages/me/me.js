@@ -3,7 +3,7 @@ const app = getApp()
 
 Page({
   data: {
-    motto: 'Email: vivianh2@illinois.edu',
+    motto: 'Email: NETID@illinois.edu',
     userInfo: {},
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo')

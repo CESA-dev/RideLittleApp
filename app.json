@@ -18,20 +18,20 @@
       {
         "pagePath": "pages/index/index",
         "text": "顺风车",
-        "iconPath": "images/list.jpg",
-        "selectedIconPath": "images/list.jpg"
+        "iconPath": "images/list.png",
+        "selectedIconPath": "images/list_select.png"
       },
       {
         "pagePath": "pages/history/history",
         "text": "历史",
-        "iconPath": "images/history.jpg",
-        "selectedIconPath": "images/history.jpg"
+        "iconPath": "images/history.png",
+        "selectedIconPath": "images/history_select.png"
       },
       {
         "pagePath": "pages/me/me",
         "text": "我的账户",
-        "iconPath": "images/me.jpg",
-        "selectedIconPath": "images/me.jpg"
+        "iconPath": "images/me.png",
+        "selectedIconPath": "images/me_select.png"
       }
     ],
     "selectedColor": "#8FEA54",

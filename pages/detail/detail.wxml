@@ -1,6 +1,9 @@
 <view class="container">
-
+  <view class="userInfo">
+  <image class="avatar" src="http://s3.amazonaws.com/nvest/Blank_Club_Website_Avatar_Gray.jpg"></image>
+  </view>
   
   <text>从香槟到芝加哥</text>
   <button class="backButton" bindtap="toIndexView">返回</button>
+
 </view>

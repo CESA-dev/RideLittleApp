@@ -18,7 +18,7 @@
 .rider-info-area {
   display: flex;
   flex-direction: column;
-   margin-left: 40rpx; 
+  margin-left: 40rpx; 
   width:60%;
 }
 
@@ -26,7 +26,6 @@
   
 }
 
-/* <<<<<<< HEAD */
 .time {
   font-size: 30rpx;
 }
@@ -44,6 +43,49 @@
   /* display: flex;
   flex-direction: row; */
 }
+.seats-area {
+  display: flex;
+  flex-direction: column;
+  padding: 50rpx;
+  /* justify-content: center; */
+  
+  /* flex-wrap: wrap;
+  justify-content: space-around; */
+}
+
+.seats-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.seat {
+  display: flex;
+  width: 180rpx;
+  height: 180rpx;
+  margin: 40rpx;
+  color: grey;
+  /* text-align: center; */
+  border-width: 2px;
+  border-color: grey;
+  border-style: solid;
+  justify-content: center;
+  align-items: center;
+  /* background-image: url('http://s3.amazonaws.com/nvest/Blank_Club_Website_Avatar_Gray.jpg'); */
+}
+
+.plus-sign {
+  font-size: 80rpx;
+  font-weight: 200;
+}
+
+.comment-area {
+  padding-left: 30rpx;
+}
+.comment {
+  font-size: 25rpx;
+  color:gray;
+}
+
 
 #header {
   background-image: url('https://i.imgur.com/I8Ce8Ke.jpg');
@@ -58,8 +100,14 @@
 }
 
 #score {
-  position: relative;
+  position: relative; 
   font-size: 30rpx;
-  top:25%;
-  /* transform:translateY(50%); */
+  top: 25%;
+   /* transform:translateY(-50%);  */
 }
+
+#seat1 {
+   background-image: url('http://s3.amazonaws.com/nvest/Blank_Club_Website_Avatar_Gray.jpg');   background-size: contain;
+}
+
+

@@ -16,5 +16,26 @@
     <text id="score">5.0/4.9分</text>
   </view>
 </view>
-<view class="seatsarea-view">
+<view class="seats-area">
+  <view class='seats-row'>
+    <view class='seat'id='seat1'>
+      <text class='plus-sign'>+</text>
+    </view>
+    <view class="seat"id='seat2'>
+      <text class='plus-sign'>+</text>
+    </view>
+  </view>
+
+  <view class='seats-row'>
+    <view class="seat" id='seat3'>
+      <text class='plus-sign'>+</text>
+    </view>
+    <view class="seat" id='seat4'>
+      <text class='plus-sign'>+</text>
+    </view>
+  </view>
+</view>
+<view class='comment-area'>
+  <text class='comment'>司机备注：</text>
+  <text class='comment'>我车速巨快，一个小时能到芝加哥，不怕就来</text>
 </view>

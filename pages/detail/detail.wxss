@@ -1,16 +1,65 @@
 .backButton {
-  margin-top: 100rpx;
-  
+  margin-top: 100rpx; 
 }
 
-.avatar{
-  width: 100rpx;
-  height: 100rpx;
-  border-radius: 50%;
+.ride-info-view {
+   padding:50rpx 0;
 }
 
-.userInfo{
-  display:flex;
+.rider-info-view {
+  padding: 40rpx 0;
+  margin: 0 40rpx;
+  display: flex;
   flex-direction: row;
+  align-content: flex-end;
+  border-bottom:1px solid grey;
+}
+
+.rider-info-area {
+  display: flex;
+  flex-direction: column;
+   margin-left: 40rpx; 
+  width:60%;
+}
+
+.rider-score-area {
   
+}
+
+/* <<<<<<< HEAD */
+.time {
+  font-size: 30rpx;
+}
+
+.route {
+  margin-bottom: 10rpx
+}
+
+.avatar {
+  width:100rpx;
+  height: 100rpx;
+  /* align-items: left; */
+  border-radius: 50%;
+  /* margin-top: 30rpx; */
+  /* display: flex;
+  flex-direction: row; */
+}
+
+#header {
+  background-image: url('https://i.imgur.com/I8Ce8Ke.jpg');
+  background-size: contain;
+  color:white;
+  /* opacity: 0.8; */
+}
+
+#recognition {
+  font-size: 25rpx;
+  color:gray;
+}
+
+#score {
+  position: relative;
+  font-size: 30rpx;
+  top:25%;
+  /* transform:translateY(50%); */
 }

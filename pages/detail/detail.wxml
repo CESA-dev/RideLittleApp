@@ -1,9 +1,20 @@
-<view class="container">
-  <view class="userInfo">
+
+<view class="container ride-info-view" id="header">
+  <text class="route">{{title}}</text>
+  <text class="time">{{date}}</text>
+  <text class="time">{{time}}</text>
+</view>
+
+<view class="rider-info-view">
   <image class="avatar" src="http://s3.amazonaws.com/nvest/Blank_Club_Website_Avatar_Gray.jpg"></image>
+  <view class="rider-info-area">
+    <text id="ridername">username</text>
+    <text id="recognition">老司机认证</text>
   </view>
   
-  <text>从香槟到芝加哥</text>
-  <button class="backButton" bindtap="toIndexView">返回</button>
-
+  <view class="rider-score-area">
+    <text id="score">5.0/4.9分</text>
+  </view>
+</view>
+<view class="seatsarea-view">
 </view>

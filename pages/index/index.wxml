@@ -24,6 +24,7 @@
           <text class="listTime">12/18/2017 1 AM</text>
           <text class="carModel">BMW X5</text>
         </view>
+        <text class="seats">空位：1</text>
       </view>
     </button>
   </view>

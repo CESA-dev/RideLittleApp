@@ -98,3 +98,14 @@
 
 
 }
+
+
+.seats{
+  width:100rpx;
+  height:60rpx;
+  margin-left: 250rpx;
+  margin-top: 73rpx;
+  background-color:#849EEB;
+  font-size: 23rpx;
+  border-radius: 3px;
+}

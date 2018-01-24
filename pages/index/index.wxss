@@ -1,32 +1,43 @@
 /**index.wxss**/
-.userinfo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+
+
+
+.searchBar {
+  width:100%;
+  height:100rpx;
+  margin-top: -200rpx;
+  background-color: #849EEB;
+  color: #849EEB;
 }
 
-.userinfo-avatar {
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
-  //margin-top: 100rpx;
-  border-radius: 50%;
+.searchTextField{
+  width:94%;
+  height: 70rpx;
+  margin-left: 3%;
+  margin-top: 6rpx;
+  background-color: #fff;
+  color:#fff;
+  border-radius: 4px;
 }
 
-.userinfo-nickname {
-  color: #aaa;
-}
+.pHolder{
+  color:#9B9B9B;
+  text-align: center;
+  margin-left: 15rpx;
+  font-size: 10px;
 
-.usermotto {
-  margin-top: 200rpx;
 }
 
 .listItem {
+  
   width: 700rpx;
   height: 200rpx;
   margin-top: 30rpx;
   align-items: left;
-  
+  border-radius: 3px;
+  box-shadow: 0rpx -1rpx 3rpx 0rpx #EAEAEA inset;
+  background-color: #fff;
+  color: #fff;
 }
 
 .itemContent {
@@ -36,30 +47,54 @@
 }
 
 .avatar {
-  width:80rpx;
-  height: 80rpx;
+  width:110rpx;
+  height: 110rpx;
   align-items: left;
   border-radius: 50%;
-  margin-top: 30rpx;
+  margin-top: 48rpx;
   display: flex;
   flex-direction: row;
   
 }
 
 .listText {
-  margin-left: 50rpx;
+  margin-left: 35rpx;
+  margin-top: 1rpx;
+  font-size: 30rpx;
+  font-weight: 250;
   
-  
+  color: #5b5b5b;
 }
 
 .listInfo{
   display:flex;
   flex-direction: column;
+  margin-top: 25rpx;
 }
 
 .listTime{
-  height:40rpx;
-  font-size: 30rpx;
-  
+  height:30rpx;
+  font-size: 25rpx;
+  font-weight: 150;
+  color: #888888;
   align-items: left;
+  margin-left: 36rpx;
+  margin-top: 50rpx;
+  position: absolute;
+  
+
+}
+
+.carModel{
+  height:30rpx;
+  font-size: 25rpx;
+  font-weight: 150;
+  color: #888888;
+  align-items: left;
+  margin-left: 36rpx;
+  margin-top: 90rpx;
+  position: absolute;
+
+
+
 }

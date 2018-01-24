@@ -10,14 +10,19 @@
   <!--<view class="usermotto">
     <text class="user-motto">{{motto}}</text>
   </view>-->
+  <view class="searchBar">
+    <input class="searchTextField" placeholder="搜索目的地" placeholder-class="pHolder"/>
+  </view>
+
   <view wx:for="{{textArray}}" wx:key="index">
 
     <button class="listItem" bindtap="toDetailView">
       <view class="itemContent">
-        <image class="avatar" src="http://s3.amazonaws.com/nvest/Blank_Club_Website_Avatar_Gray.jpg"></image>
+        <image class="avatar" src="avatar.jpg"></image>
         <view class="listInfo">
-          <text class="listTime">12/18/2017</text>
           <text class="listText">{{item}}</text>
+          <text class="listTime">12/18/2017 1 AM</text>
+          <text class="carModel">BMW X5</text>
         </view>
       </view>
     </button>

@@ -8,7 +8,7 @@ Page({
     userInfo: {},
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
-    textArray: ['从香槟到芝加哥', '从芝加哥到香槟', '从香槟到普渡', '从芝加哥到香槟', '从香槟到芝加哥','从香槟到普渡']
+    textArray: ['ORD-香槟', '香槟-ORD', 'ORD-香槟', '香槟-普渡', '普渡-香槟','香槟-ORD']
   },
   //事件处理函数
   bindViewTap: function() {

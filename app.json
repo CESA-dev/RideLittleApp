@@ -9,10 +9,11 @@
 
   "window":{
     "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "CESA",
-    "navigationBarTextStyle":"black"
+    "navigationBarBackgroundColor": "#849EEB",
+    "navigationBarTitleText": "Illini 顺风车",
+    "navigationBarTextStyle":"white"
   },
+
   "tabBar":{
     "list": [
       {
@@ -34,7 +35,7 @@
         "selectedIconPath": "images/me_select.png"
       }
     ],
-    "selectedColor": "#8FEA54",
+    "selectedColor": "#849EEB",
     "borderStyle": "white"
   }
 }

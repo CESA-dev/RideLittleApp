@@ -17,20 +17,8 @@
   </view>
 </view>
 <view class="seats-area">
-  <view class='seats-row'>
-    <view class='seat'id='seat1'>
-      <text class='plus-sign'>+</text>
-    </view>
-    <view class="seat"id='seat2'>
-      <text class='plus-sign'>+</text>
-    </view>
-  </view>
-
-  <view class='seats-row'>
-    <view class="seat" id='seat3'>
-      <text class='plus-sign'>+</text>
-    </view>
-    <view class="seat" id='seat4'>
+  <view class='seats-row' wx:for='{{textArray}}' wx:for-item='item_row' wx:for-index='idx_row' wx:key='{{idx_row}}'>
+     <view class='seat'id='{{idx_row}}{{idx_col}}' bindtap="addSeat" wx:for='{{item_row}}' wx:for-item='item_col' wx:for-index='idx_col' wx:key='{{idx_col}}' style='background-image:url({{item_col.img}});background-size:contain'> 
       <text class='plus-sign'>+</text>
     </view>
   </view>

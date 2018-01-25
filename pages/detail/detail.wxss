@@ -11,7 +11,7 @@
   margin: 0 40rpx;
   display: flex;
   flex-direction: row;
-  align-content: flex-end;
+  /* align-content: flex-end; */
   border-bottom:1px solid grey;
 }
 
@@ -19,11 +19,11 @@
   display: flex;
   flex-direction: column;
   margin-left: 40rpx; 
-  width:60%;
+  width:50%;
 }
 
 .rider-score-area {
-  
+  display: inline-block;
 }
 
 .time {
@@ -60,22 +60,23 @@
 }
 .seat {
   display: flex;
-  width: 180rpx;
+  width: 180rpx; 
   height: 180rpx;
   margin: 40rpx;
-  color: grey;
-  /* text-align: center; */
+  color: grey; 
+   text-align: center; 
   border-width: 2px;
   border-color: grey;
   border-style: solid;
   justify-content: center;
-  align-items: center;
-  /* background-image: url('http://s3.amazonaws.com/nvest/Blank_Club_Website_Avatar_Gray.jpg'); */
+  align-items: center; 
+  /* background-image: url('http://s3.amazonaws.com/nvest/Blank_Club_Website_Avatar_Gray.jpg');  */
 }
 
 .plus-sign {
   font-size: 80rpx;
   font-weight: 200;
+  z-index: -1;
 }
 
 .comment-area {
@@ -103,11 +104,13 @@
   position: relative; 
   font-size: 30rpx;
   top: 25%;
+  margin-right: 20rpx;
    /* transform:translateY(-50%);  */
 }
 
-#seat1 {
-   background-image: url('http://s3.amazonaws.com/nvest/Blank_Club_Website_Avatar_Gray.jpg');   background-size: contain;
-}
+/* #seat1 {
+   background-image: url('http://s3.amazonaws.com/nvest/Blank_Club_Website_Avatar_Gray.jpg');   
+   background-size: contain;
+} */
 
 

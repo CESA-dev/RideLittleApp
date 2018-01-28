@@ -6,7 +6,7 @@ Page({
       date: options.date,
       time: options.time,
       car: options.car,
-      textArray: [[{ name: 'username', img: 'http://s3.amazonaws.com/nvest/Blank_Club_Website_Avatar_Gray.jpg' }, { name: '', img: '' }], [{ name: '', img: '' },{name: '', img: ''}]]
+      textArray: [[{ name: 'username', img: 'http://s3.amazonaws.com/nvest/Blank_Club_Website_Avatar_Gray.jpg', del_display: 'none' }, { name: '', img: '', del_display: 'none' }], [{ name: '', img: '', del_display: 'none' }, { name: '', img: '', del_display: 'none'}]]
     });
   },
 
@@ -16,7 +16,22 @@ Page({
       url: '../index/index',
     });
   },
-
+  deleteSeat: function(e) {
+    let id = e.currentTarget.id;
+    console.log(id);
+    let passengers = this.data.textArray;
+    console.log(passengers[parseInt(id[3])][parseInt(id[4])]);
+    if (passengers[parseInt(id[3])][parseInt(id[4])].img === '') {
+      console.log('errrrorrrrr');
+    }
+    else {
+      passengers[parseInt(id[3])][parseInt(id[4])].img = '';
+      passengers[parseInt(id[3])][parseInt(id[4])].del_display='none';
+    }
+    this.setData({
+      textArray: passengers
+    });
+  },
   addSeat: function(e) {
     console.log(e);
     let id = e.currentTarget.id;
@@ -26,6 +41,7 @@ Page({
 
     // if the seat clicked is empty
     if (passengers[parseInt(id[0])][parseInt(id[1])].img === '') {
+      console.log('adding image');
       // parse the passenger to remove the old seat cur user selected
       passengers.forEach((row_val, row_idx, arr_whole) => {
         row_val.forEach((col_val, col_idx, arr_row) => {
@@ -38,6 +54,7 @@ Page({
       // add user info
       passengers[parseInt(id[0])][parseInt(id[1])].img = user_img;
       passengers[parseInt(id[0])][parseInt(id[1])].name = user_name;
+      passengers[parseInt(id[0])][parseInt(id[1])].del_display='true';
     }
     this.setData({
       textArray: passengers

@@ -23,7 +23,6 @@
 }
 
 .rider-score-area {
-  display: inline-block;
 }
 
 .time {
@@ -59,6 +58,7 @@
   justify-content: center;
 }
 .seat {
+  position: relative;
   display: flex;
   width: 180rpx; 
   height: 180rpx;
@@ -86,7 +86,12 @@
   font-size: 25rpx;
   color:gray;
 }
-
+.del-icon {
+  position: absolute;
+  top:0;
+  right:0;
+  color: darkred;
+}
 
 #header {
   background-image: url('https://i.imgur.com/I8Ce8Ke.jpg');

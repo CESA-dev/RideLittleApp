@@ -48,6 +48,7 @@ Page({
           if (col_val.name === user_name) {
             arr_row[col_idx].name = '';
             arr_row[col_idx].img = '';
+            arr_row[col_idx].del_display = 'none';
           }
         })
       });

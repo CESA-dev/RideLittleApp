@@ -1,2 +1,19 @@
-<!--pages/history/history.wxml-->
-<text>pages/history/history.wxml</text>
+<!--index.wxml-->
+<view class="container">
+  <view wx:for="{{textArray}}" wx:key="index">
+
+    <button class="listItem" bindtap="toDetailView" data-title="{{item.route}}" data-date="{{item.date}}" data-time="{{item.time}}" data-car="{{item.car}}">
+      <view class="itemContent">
+        <image class="avatar" src="avatar.jpg"></image>
+        <view class="listInfo">
+          <text class="listText">{{item.route}}</text>
+          <text class="listTime">{{item.date}} {{item.time}}</text>
+          <text class="carModel">{{item.car}}</text>
+        </view>
+        <text class="seats">进行中</text>
+      </view>
+    </button>
+  </view>
+
+
+</view>

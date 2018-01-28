@@ -63,6 +63,16 @@ Page({
       url: '../detail/detail?title=' + title + "&date="
       + date + "&time=" + time + "&car=" + car
     })
+  },
+
+  toNewRideView:function(e){
+    wx.navigateTo({
+      url: '../newRide/newRide'
+    })
+  },
+
+  bindKeyInput:function(e){
+    console.log(e.detail.value)
   }
   
 

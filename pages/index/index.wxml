@@ -11,7 +11,16 @@
     <text class="user-motto">{{motto}}</text>
   </view>-->
   <view class="searchBar">
-    <input class="searchTextField" placeholder="搜索目的地" placeholder-class="pHolder"/>
+    <input class="searchTextField" bindinput="bindKeyInput" placeholder="搜索目的地" placeholder-class="pHolder" auto-focus/>
+  </view>
+
+  <view>
+    <button class="listItem" bindtap="toNewRideView" style="height:60px">
+      
+      <text class="newButtonText">创建新Ride按钮</text>
+      
+    </button>
+
   </view>
 
   <view wx:for="{{textArray}}" wx:key="index">

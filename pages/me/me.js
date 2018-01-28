@@ -1,4 +1,4 @@
-// pages/mine/mine.js
+// pages/me/me.js
 const app = getApp()
 
 Page({
@@ -6,7 +6,7 @@ Page({
     motto: 'Email: NETID@illinois.edu',
     userInfo: {},
     hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
+    canIUse: wx.canIUse('open-type.getUserInfo')
   },
   //事件处理函数
   bindViewTap: function () {
@@ -51,3 +51,5 @@ Page({
     })
   }
 })
+
+

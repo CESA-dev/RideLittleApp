@@ -1,4 +1,4 @@
-/* pages/mine/mine.wxss */
+/* pages/me/me.wxss */
 
 .userinfo {
   display: flex;

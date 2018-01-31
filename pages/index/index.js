@@ -63,6 +63,13 @@ Page({
 
   bindKeyInput:function(e){
     console.log(e.detail.value)
+  },
+
+
+  toSearchView: function(e){
+    wx.navigateTo({
+      url: '../search/search'
+    })
   }
   
 

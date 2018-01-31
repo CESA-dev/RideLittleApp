@@ -5,13 +5,15 @@
     "pages/detail/detail",
     "pages/me/me",
     "pages/history/history",
-    "pages/newRide/newRide"
+    "pages/newRide/newRide",
+    "pages/search/search"
+
   ],
 
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#849EEB",
-    "navigationBarTitleText": "Illini 顺风车",
+    "navigationBarTitleText": "Illini Ride",
     "navigationBarTextStyle":"white"
   },
 

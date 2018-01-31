@@ -11,7 +11,10 @@
     <text class="user-motto">{{motto}}</text>
   </view>-->
   <view class="searchBar">
-    <input class="searchTextField" bindinput="bindKeyInput" placeholder="搜索目的地" placeholder-class="pHolder" auto-focus/>
+    <!--<input class="searchTextField" bindinput="bindKeyInput" placeholder="搜索目的地" placeholder-class="pHolder" auto-focus/>-->
+    <button class="searchTextField" bindtap="toSearchView">
+      <text class="pHolder">搜索顺风车</text>
+    </button>
   </view>
 
   <view>

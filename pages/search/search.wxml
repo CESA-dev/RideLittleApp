@@ -1,0 +1,17 @@
+<view class="background">
+
+  <picker class="date" mode="date" value="{{date}}" start="2018-01-30" end="2020-09-01" bindchange="bindDateChange">
+    <view class="picker">
+      出发日期: {{date}}
+    </view>
+  </picker>
+
+  <picker class="time" mode="time" value="{{time}}" start="12:01" end="24:59" bindchange="bindTimeChange">
+    <view class="picker">
+      出发时间: {{time}}
+    </view>
+  </picker>
+
+
+
+</view>

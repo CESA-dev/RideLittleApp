@@ -19,7 +19,7 @@
 <view class="seats-area">
   <view class='seats-row' wx:for='{{textArray}}' wx:for-item='item_row' wx:for-index='idx_row' wx:key='{{idx_row}}'>
      <view class='seat'id='{{idx_row}}{{idx_col}}' bindtap="addSeat" wx:for='{{item_row}}' wx:for-item='item_col' wx:for-index='idx_col' wx:key='{{idx_col}}' style='background-image:url({{item_col.img}});background-size:contain'> 
-      <i class="fa fa-minus-circle del-icon" aria-hidden="true" id='del{{idx_row}}{{idx_col}}'catchtap="deleteSeat" style='display:{{item_col.del_display}}'></i>
+      <i class="fa fa-times del-icon" aria-hidden="true" id='del{{idx_row}}{{idx_col}}'catchtap="deleteSeat" style='display:{{item_col.del_display}}'></i>
       <text class='plus-sign'>+</text>
     </view>
   </view>

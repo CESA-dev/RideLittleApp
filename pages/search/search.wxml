@@ -1,17 +1,61 @@
-<view class="background">
+<view class="whole_block">
 
-  <picker class="date" mode="date" value="{{date}}" start="2018-01-30" end="2020-09-01" bindchange="bindDateChange">
-    <view class="picker">
-      出发日期: {{date}}
+  <view class="sub_block">
+    <text class='title'>出发地:</text>
+    <view class="loc_option_block">
+      <block wx:for='{{start}}' wx:for-item='item_row' wx:for-index='idx_row' wx:key='{{idx_row}}'>
+        <view id='start_{{idx_row}}' class='loc_option selected' wx:if="{{item_row.selected}}" bindtap='addLoc'> 
+          <text class='loc_text'>{{item_row.name}}</text>
+        </view>
+        <view id='start_{{idx_row}}' class='loc_option' bindtap='addLoc' wx:else> 
+          <text class='loc_text'>{{item_row.name}}</text>
+        </view>
+      </block>
     </view>
-  </picker>
+  </view>
 
-  <picker class="time" mode="time" value="{{time}}" start="12:01" end="24:59" bindchange="bindTimeChange">
-    <view class="picker">
-      出发时间: {{time}}
+  <view class="sub_block">
+    <text class='title'>目的地:</text>
+    <view class="loc_option_block">
+      <block wx:for='{{destination}}' wx:for-item='item_row' wx:for-index='idx_row' wx:key='{{idx_row}}'>
+        <view id='des_{{idx_row}}' class='loc_option selected' wx:if="{{item_row.selected}}" bindtap='addLoc'> 
+          <text class='loc_text'>{{item_row.name}}</text>
+        </view>
+        <view id='des_{{idx_row}}' class='loc_option' bindtap='addLoc' wx:else> 
+          <text class='loc_text'>{{item_row.name}}</text>
+        </view>
+      </block>
     </view>
-  </picker>
+  </view>
 
+  <view class='sub_block'>
+    <text class="title">
+        出发日期:
+    </text>
+    <picker class="date picker_block" mode="date" value="{{date}}" start="2018-01-30" end="2020-09-01" bindchange="bindDateChange">
+      <view class="picker">
+          <text class='select_text'>{{date}}</text>
+      </view>
+    </picker>
+    
+  </view>
+  
 
-
+  <view class='sub_block'>
+    <text class="title">
+        出发时间:
+    </text>
+    <picker class="time picker_block" mode="time" value="{{time}}" start="12:01" end="24:59" bindchange="bindTimeChange">
+      <view class="picker">
+          <text class='select_text'>{{time}}</text>
+      </view>
+    </picker>
+  </view>
+  
+  <view class='icon_block'>
+    <icon class='fa fa-search'></icon>
+  </view>
+    
+  
+  
 </view>

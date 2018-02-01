@@ -90,7 +90,9 @@
   position: absolute;
   top:0;
   right:0;
-  color: darkred;
+  color: black; 
+  background-color: white;
+  opacity: 0.5;
 }
 
 #header {

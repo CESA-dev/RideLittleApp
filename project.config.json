@@ -9,7 +9,7 @@
 	},
 	"compileType": "miniprogram",
 	"libVersion": "1.6.6",
-	"appid": "wx782c5c2a289351d9",
+	"appid": "touristappid",
 	"projectname": "RideLittleApp",
 	"condition": {
 		"search": {

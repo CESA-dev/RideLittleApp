@@ -1,1 +1,80 @@
 /* pages/history/history.wxss */
+
+.listItem {
+  
+  width: 700rpx;
+  height: 300rpx;
+  margin-top: 30rpx;
+  align-items: left;
+  border-radius: 3px;
+  box-shadow: 0rpx -1rpx 3rpx 0rpx #EAEAEA inset;
+  background-color: #fff;
+  color: #fff;
+}
+
+.itemContent {
+  align-items: left;
+  display: flex;
+  flex-direction: column;
+}
+
+.routeInfo{
+  display:flex;
+  flex-direction: row;
+  margin-top: 20rpx;
+  border-bottom:1px solid grey;
+  padding: 20rpx;
+}
+.listText {
+  margin-left: 35rpx;
+  margin-top: 1rpx;
+  font-size: 30rpx;
+  font-weight: 250;
+  color: #5b5b5b;
+}
+
+.listTime{
+  height:30rpx;
+  font-size: 25rpx;
+  font-weight: 150;
+  color: #888888;
+  align-items: left;
+  margin-left: 36rpx;
+  margin-top: 50rpx;
+  position: absolute;
+}
+.status{
+  width:100rpx;
+  height:60rpx;
+  margin-left: 300rpx;
+  margin-top: 20rpx;
+  background-color:#32CD32;
+  font-size: 23rpx;
+  border-radius: 3px;
+}
+
+
+.driverInfo{
+  display:flex;
+  flex-direction: row;
+  margin-top: 10rpx;
+}
+
+.avatar {
+  width:100rpx;
+  height: 100rpx;
+  align-items: left;
+  border-radius: 50%;
+  margin-top: 30rpx;
+  margin-left: 30rpx;
+  }
+
+.carModel{
+  height:30rpx;
+  font-size: 25rpx;
+  font-weight: 150;
+  color: #888888;
+  align-items: left;
+  margin-left: 60rpx;
+  margin-top: 20rpx;
+}

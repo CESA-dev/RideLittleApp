@@ -58,7 +58,7 @@
       </text>
       <picker class="time picker_block" value="{{index}}" range="{{numberOfSeat}}" bindchange="bindSeatChange">
         <view class="picker">
-            <text class='select_text'>{{index}}</text>
+            <text class='select_text'>{{numberOfSeat[index]}}</text>
         </view>
       </picker>
     </view>

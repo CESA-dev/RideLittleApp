@@ -6,7 +6,11 @@ Page({
     motto: 'Email: NETID@illinois.edu',
     userInfo: {},
     hasUserInfo: false,
-    canIUse: wx.canIUse('open-type.getUserInfo')
+    canIUse: wx.canIUse('open-type.getUserInfo'),
+    edit: true,
+    buttonText: "编辑资料",
+    buttonType: "primary",
+    details: {email: "", major: "", year: "", music: "", sports: ""}
   },
   //事件处理函数
   bindViewTap: function () {
@@ -42,6 +46,7 @@ Page({
       })
     }
   },
+
   getUserInfo: function (e) {
     console.log(e)
     app.globalData.userInfo = e.detail.userInfo
@@ -49,7 +54,26 @@ Page({
       userInfo: e.detail.userInfo,
       hasUserInfo: true
     })
+  },
+
+  onClick: function () {
+    if(this.data.edit){
+      this.setData({
+        buttonText: "保存修改",
+        buttonType: "warn",
+        edit: false
+      })
+    }
+    else{
+      this.setData({
+        buttonText: "编辑资料",
+        buttonType: "primary",
+        edit: true
+      })
+    }
   }
+
+  
 })
 
 

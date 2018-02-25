@@ -8,24 +8,34 @@
   position: absolute;
 }
 
-
-
 .userinfo-avatar {
-  width: 150rpx;
-  height: 150rpx;
+  width: 180rpx;
+  height: 180rpx;
   
   border-radius: 50%;
-  margin-top: 80rpx;
-  margin-left: 110rpx;
+  margin-top: 60rpx;
+  margin-left: 70rpx;
 }
 
-
-
-
+.user-info-area {
+  display:flex;
+  flex-direction: column;
+  margin-left: 80rpx;
+  margin-top: 70rpx;
+}
 
 .userinfo-nickname {
-  color: #aaa;
-  margin-top: 50rpx;
+  font-size: 35rpx;
+}
+
+.userinfo-score {
+  margin-top: 8rpx;
+  font-size: 33rpx;
+}
+
+.userinfo-record {
+  margin-top: 15rpx;
+  font-size: 25rpx;
 }
 
 .usermotto {
@@ -38,7 +48,43 @@
   display: flex;
   flex-direction: row;
   width:100%;
-  height:350rpx;
+  height:280rpx;
   background-color: 245 245 245;
   
+}
+
+.input-block{
+  width:100%;
+  background-color: white;
+}
+
+.line{
+  width:100%;
+  height: 1rpx;
+  background:#aaa;
+  color: #aaa;
+}
+
+.userinfo-title{
+  margin-left: 80rpx;
+  font-size: 25rpx;
+  color: #5b5b5b;
+  margin-top: 25rpx;
+  margin-bottom: 25rpx;
+}
+
+.input{
+  font-size: 30rpx;
+}
+
+.button-block{
+  width:100%;
+  height: 150rpx;
+}
+
+.edit-button{
+  margin-top: 20rpx;
+  height: 90rpx;
+  width: 600rpx;
+  font-size: 33rpx;
 }

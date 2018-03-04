@@ -65,16 +65,27 @@
   color: #aaa;
 }
 
-.userinfo-title{
-  margin-left: 80rpx;
+.userinfo-details{
   font-size: 25rpx;
   color: #5b5b5b;
   margin-top: 25rpx;
-  margin-bottom: 25rpx;
+  border-bottom: 1px solid grey
+}
+
+.userinfo-details-sports{
+  font-size: 25rpx;
+  color: #5b5b5b;
+  margin-top: 25rpx;
+}
+
+.userinfo-title{
+  margin-left: 80rpx;
 }
 
 .input{
+  margin-left: 80rpx;
   font-size: 30rpx;
+  margin-bottom: 25rpx;
 }
 
 .button-block{

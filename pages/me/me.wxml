@@ -23,43 +23,44 @@
   </view>
 
   <view class="input-block" bindchange="reset">
-
-    <view class="userinfo-title">
-    <text class="userinfo-email-title">学校邮箱</text>
-    <input class="input" id="emailInput" value="{{email}}" disabled='{{edit}}'
-     placeholder="netid@illinois.edu"></input>
+    <view class="userinfo-details">
+      <view class="userinfo-title">
+        <text class="userinfo-email-title">学校邮箱</text>
+      </view>
+      <input class="input" id="emailInput" value="{{email}}"
+       disabled='{{edit}}' placeholder="netid@illinois.edu"></input>
     </view>
 
-    <view class="line"></view>
-
-    <view class="userinfo-title">
-    <text class="userinfo-major-title">在读专业</text>
-    <input class="input" id="majorInput" value="{{major}}" disabled='{{edit}}'
-     placeholder="Math"></input>
+    <view class="userinfo-details">
+      <view class="userinfo-title">
+        <text class="userinfo-major-title">在读专业</text>
+      </view>
+      <input class="input" id="majorInput" value="{{major}}"
+       disabled='{{edit}}' placeholder="Math"></input>
+    </view>
+    
+    <view class="userinfo-details">
+      <view class="userinfo-title">
+        <text class="userinfo-year-title">所在年级</text>
+      </view>
+      <input class="input" id="yearInput" value="{{year}}"
+       disabled='{{edit}}' placeholder="大二"></input>
     </view>
 
-    <view class="line"></view>
-
-    <view class="userinfo-title">
-    <text class="userinfo-year-title">所在年级</text>
-    <input class="input" id="yearInput" value="{{year}}" disabled='{{edit}}'
-     placeholder="大二"></input>
+    <view class="userinfo-details">
+      <view class="userinfo-title">
+        <text class="userinfo-music-title">喜欢的音乐</text>
+      </view>
+      <input class="input" id="musicInput" value="{{music}}"
+       disabled='{{edit}}' placeholder="轻音乐"></input>
     </view>
 
-    <view class="line"></view>
-
-    <view class="userinfo-title">
-    <text class="userinfo-music-title">喜欢的音乐</text>
-    <input class="input" id="musicInput" value="{{music}}" disabled='{{edit}}'
-     placeholder="轻音乐"></input>
-    </view>
-
-    <view class="line"></view>
-
-    <view class="userinfo-title">
-    <text class="userinfo-sports-title">喜欢的体育运动</text>
-    <input class="input" id="sportsInput" value="{{sports}}" disabled='{{edit}}'
-     placeholder="篮球"></input>
+    <view class="userinfo-details-sports">
+      <view class="userinfo-title">
+        <text class="userinfo-sports-title">喜欢的体育运动</text>
+      </view>
+      <input class="input" id="sportsInput" value="{{sports}}"
+       disabled='{{edit}}' placeholder="篮球"></input>
     </view>
   </view>
 

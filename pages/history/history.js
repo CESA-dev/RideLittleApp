@@ -8,15 +8,37 @@ Page({
     motto: 'Hello World',
     userInfo: {},
     hasUserInfo: false,
-    textArray: [{ route: 'ORD-香槟', date: '12/18/2017', time: '1 AM', car: 'BMW X5' }, { route: '香槟-ORD', date: '12/18/2017', time: '1 AM', car: 'BMW X5' }, { route: 'ORD-香槟', date: '12/18/2017', time: '1 AM', car: 'BMW X5' }, { route: '香槟-普渡', date: '12/18/2017', time: '1 AM', car: 'BMW X5' }, { route: '普渡-香槟', date: '12/18/2017', time: '1 AM', car: 'BMW X5' }, { route: '香槟-ORD' },]
-  
+    textArray: [{ route: 'ORD-香槟', date: '12/18/2017', time: '1 AM', car: 'BMW X5',               status:'进行中'} ],
+    histryArray:[
+      { route: '香槟-ORD', date: '12/18/2017', time: '1 AM', car: 'BMW X5', status: '已完成' },
+      { route: 'ORD-香槟', date: '12/18/2017', time: '1 AM', car: 'BMW X5',status: '已完成' },
+      { route: '香槟-普渡', date: '12/18/2017', time: '1 AM', car: 'BMW X5', status: '已完成' },
+      { route: '普渡-香槟', date: '12/18/2017', time: '1 AM', car: 'BMW X5', status: '已完成' },
+    ],
+
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
+    if (app.globalData.userInfo) {
+      this.setData({
+        userInfo: app.globalData.userInfo,
+        hasUserInfo: true
+      })
+    }
+    else {
+      wx.getUserInfo({
+        success: res => {
+          app.globalData.userInfo = res.userInfo
+          this.setData({
+            userInfo: res.userInfo,
+            hasUserInfo: true
+          })
+        }
+      })
+    }
   },
 
   /**

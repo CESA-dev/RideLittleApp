@@ -43,7 +43,7 @@
   margin-top: 50rpx;
   position: absolute;
 }
-.status{
+.statusCurrent{
   width:100rpx;
   height:60rpx;
   margin-left: 300rpx;
@@ -53,6 +53,15 @@
   border-radius: 3px;
 }
 
+.statusPast{
+  width:100rpx;
+  height:60rpx;
+  margin-left: 300rpx;
+  margin-top: 20rpx;
+  background-color:#A52A2A;
+  font-size: 23rpx;
+  border-radius: 3px;
+}
 
 .driverInfo{
   display:flex;

@@ -1,0 +1,60 @@
+
+.background{
+  width:100%;
+  height:100%;
+  background-color: #FCFCFD;
+  position: fixed;
+}
+
+.gap{
+  width:100%;
+  height:150rpx;
+  background-color: #DCDCDC;
+  opacity: 0;
+}
+
+.passenger{
+  width: 90%;
+  height: 200rpx;
+  margin-top: 40rpx;
+  margin-left: 5%;
+  background-color: #FFFFFF;
+  border-radius: 7rpx;
+  box-shadow: 0rpx 1rpx 4rpx 1rpx #DCDCDC;
+  
+  
+}
+
+.passenger-button{
+  width:90%;
+  height:200rpx;
+  background-color: clear;
+  position: fixed;
+  opacity: 0;
+  align-content: center;
+}
+
+.icon{
+  margin-left: 41%;
+  margin-top: 5%;
+  width:50rpx;
+  height:50rpx;
+  position: absolute;
+  align-self: center;
+}
+
+.role-text{
+  width:50%;
+  height:50rpx;
+  margin-left: 20%;
+  margin-top: 15%;
+  background-color: clear;
+  align-self: center;
+  align-content: center;
+  text-align: center;
+  font-size: 30rpx;
+  color: #4A4A4A;
+  font-weight: 350;
+  position: absolute;
+  
+}

@@ -1,5 +1,6 @@
 {
   "pages":[
+    "pages/launch/launch",
     "pages/index/index",
     "pages/logs/logs",
     "pages/detail/detail",
@@ -15,30 +16,8 @@
     "navigationBarBackgroundColor": "#849EEB",
     "navigationBarTitleText": "Illini Ride",
     "navigationBarTextStyle":"white"
-  },
-
-  "tabBar":{
-    "list": [
-      {
-        "pagePath": "pages/index/index",
-        "text": "顺风车",
-        "iconPath": "images/list.png",
-        "selectedIconPath": "images/list_select.png"
-      },
-      {
-        "pagePath": "pages/history/history",
-        "text": "历史",
-        "iconPath": "images/history.png",
-        "selectedIconPath": "images/history_select.png"
-      },
-      {
-        "pagePath": "pages/me/me",
-        "text": "我的账户",
-        "iconPath": "images/me.png",
-        "selectedIconPath": "images/me_select.png"
-      }
-    ],
-    "selectedColor": "#849EEB",
-    "borderStyle": "white"
   }
+  
+  
+
 }

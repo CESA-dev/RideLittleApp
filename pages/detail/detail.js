@@ -10,6 +10,10 @@ Page({
     });
   },
 
+  driverProfile:function(){
+    console.log("to driver profile");
+  },
+
   toIndexView: function() {
     console.log("hi");
     wx.switchTab({
@@ -60,6 +64,13 @@ Page({
     this.setData({
       textArray: passengers
     });
+  },
+  endRideAction: function(e){
+    /*wx.navigateTo({
+      url: 'rating page',
+    })*/
+    console.log("end ride");
   }
+
   
 })

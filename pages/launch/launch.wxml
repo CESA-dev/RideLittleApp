@@ -1,0 +1,15 @@
+
+<view class="background">
+  <view class="gap">
+  </view>
+  <view wx:for="{{buttonArray}}" wx:key="index">
+    <view class="passenger">
+      <button class="passenger-button" bindtap="{{item.tap}}" data-title="{{item.role}}">
+        
+      </button>
+      <image class="icon" src="{{item.icon}}"></image>
+      <text class="role-text">{{item.role}}</text>
+    </view>
+  </view>
+  
+</view>

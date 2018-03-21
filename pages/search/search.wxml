@@ -52,7 +52,7 @@
     </picker>
   </view>
   
-  <view class='icon_block'>
+  <view class='icon_block' bindtap='search'>
     <icon class='fa fa-search'></icon>
   </view>
     

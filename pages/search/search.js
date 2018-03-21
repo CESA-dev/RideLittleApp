@@ -115,5 +115,11 @@ Page({
       });
     }
     
+  },
+
+  search: function(e){
+    wx.navigateTo({
+      url: '../index/index',
+    })
   }
 })

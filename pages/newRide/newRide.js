@@ -134,6 +134,8 @@ Page({
 
   create:function(e){
     console.log('创建房间' + this.data.selectSeatNumber + this.data.selectDate + this.data.selectTime);
-    
+    wx.navigateTo({
+      url: '../detail/detail',
+    })
   }
 })

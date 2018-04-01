@@ -1,0 +1,71 @@
+<!--pages/driver/driver.wxml-->
+<view class="container">
+  <!--view class="userinfo"-->
+    <!--button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <!--block wx:else-->
+    <!--<block>
+      <image open-type="getUserInfo" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}             </text>
+    </block>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>-->
+
+  <view class="user-block">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}"
+      background-size="cover"></image>
+    <view class="user-info-area">
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+      <text class="userinfo-score">4.9/5.0</text>
+      <text class="userinfo-record">已参与过1231次顺风车</text>
+    </view>
+  </view>
+
+  <view class="input-block" bindchange="reset">
+    <view class="userinfo-details">
+      <view class="userinfo-title">
+        <text class="userinfo-email-title">学校邮箱</text>
+      </view>
+      <input class="input" id="emailInput" value="{{email}}"
+       disabled='{{edit}}' placeholder="netid@illinois.edu"></input>
+    </view>
+
+    <view class="userinfo-details">
+      <view class="userinfo-title">
+        <text class="userinfo-major-title">在读专业</text>
+      </view>
+      <input class="input" id="majorInput" value="{{major}}"
+       disabled='{{edit}}' placeholder="Math"></input>
+    </view>
+    
+    <view class="userinfo-details">
+      <view class="userinfo-title">
+        <text class="userinfo-year-title">所在年级</text>
+      </view>
+      <input class="input" id="yearInput" value="{{year}}"
+       disabled='{{edit}}' placeholder="大二"></input>
+    </view>
+
+    <view class="userinfo-details">
+      <view class="userinfo-title">
+        <text class="userinfo-music-title">喜欢的音乐</text>
+      </view>
+      <input class="input" id="musicInput" value="{{music}}"
+       disabled='{{edit}}' placeholder="轻音乐"></input>
+    </view>
+
+    <view class="userinfo-details-sports">
+      <view class="userinfo-title">
+        <text class="userinfo-sports-title">喜欢的体育运动</text>
+      </view>
+      <input class="input" id="sportsInput" value="{{sports}}"
+       disabled='{{edit}}' placeholder="篮球"></input>
+    </view>
+  </view>
+
+  <view class="button-block">
+    <button bindtap="onClick" type="{{buttonType}}"
+     class="edit-button">{{buttonText}}</button>
+  </view>
+</view>

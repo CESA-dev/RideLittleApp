@@ -10,10 +10,6 @@ Page({
     });
   },
 
-  driverProfile:function(){
-    console.log("to driver profile");
-  },
-
   toIndexView: function() {
     console.log("hi");
     wx.switchTab({
@@ -70,6 +66,13 @@ Page({
       url: 'rating page',
     })*/
     console.log("end ride");
+  },
+
+  toDriverView: function (e) {
+    console.log(e)
+    wx.navigateTo({
+      url: '../driver/driver'
+    })
   }
 
   

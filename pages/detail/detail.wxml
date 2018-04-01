@@ -6,7 +6,7 @@
 </view>
 
 <view class="rider-info-view">
-  <image class="avatar" src="http://s3.amazonaws.com/nvest/Blank_Club_Website_Avatar_Gray.jpg" bindtap="driverProfile"></image>
+  <image class="avatar" src="http://s3.amazonaws.com/nvest/Blank_Club_Website_Avatar_Gray.jpg" bindtap="toDriverView"></image>
   <view class="rider-info-area">
     <text id="ridername">username</text>
     <text id="recognition">老司机认证</text>
